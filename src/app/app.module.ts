@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
-import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 
 import { OrganisationsPageModule } from '../pages/organisations/organisations.module';
 import { ReposPageModule } from '../pages/repos/repos.module';
@@ -18,7 +18,7 @@ import { GithubUsers } from '../providers/github-users/github-users';
   ],
   imports: [
     BrowserModule,
-    HttpModule,
+    HttpClientModule,
     IonicModule.forRoot(MyApp),
     OrganisationsPageModule,
     ReposPageModule,
